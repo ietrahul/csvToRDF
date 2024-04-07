@@ -1,0 +1,6 @@
+empID,name,age,totalExperience,managerID,salary,rating,feedback
+100,Shri Ram,29,10.2,1001,20000.42,Outstanding,"He is good, he is a great learner, Outstanding contributor"
+1001,Shri Vashitha,55,33,,9687476.65,Met Expectation,
+101,Shri Ram 101,29,11.2,1001,25000.42,Outstanding,"He is good, he is a great learner, Outstanding contributor"
+102,Shri Ram 102,30,11.2,1001,40000.42,Outstanding,"He is good, he is a great learner, Outstanding contributor"
+103,Shri Ram 103,31,11.2,1001,50000.42,Outstanding,"He is good, he is a great learner, Outstanding contributor"

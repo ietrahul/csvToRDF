@@ -1,0 +1,24 @@
+BASE <http://example.com/base/>
+PREFIX mapper: <http://www.ontotext.com/mapper/>
+PREFIX demo: <http://example.com/employee/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema>
+CONSTRUCT {
+  ?s1 a demo:Employee ;
+    demo:Name ?o_Name ;
+    demo:Age ?o_Age ;
+    demo:TotalExperience ?o_TotalExperience ;
+    demo:Manager ?o_Manager ;
+    demo:Salary ?o_Salary ;
+    demo:SalaryRange ?o_SalaryRange ;
+    demo:hasManager ?o_hasManager .
+} WHERE {
+  BIND(IRI(mapper:encode_iri(demo:, ?c_empID)) as ?s1)
+  BIND(STR(?c_name) as ?o_Name)
+  BIND(STRDT(?c_age, xsd:integer) as ?o_Age)
+  BIND(STRDT(?c_totalExperience, xsd:float) as ?o_TotalExperience)
+  BIND(STRDT(?c_managerID, xsd:integer) as ?o_Manager)
+  BIND(STRDT(?c_salary, xsd:float) as ?o_Salary)
+  BIND(STR(?c_salaryRange) as ?o_SalaryRange)
+  (?row_index "if(isBlank(cells['managerID'].value), 'No','Yes')") mapper:grel ?o_hasManager_grel .
+  BIND(STR(?o_hasManager_grel) as ?o_hasManager)
+}

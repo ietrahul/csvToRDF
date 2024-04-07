@@ -1,0 +1,53 @@
+@prefix mapper: <http://www.ontotext.com/mapper/> .
+@prefix demo: <http://example.com/employee/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+
+demo:100 a demo:Employee;
+  demo:Name "Shri Ram";
+  demo:Age "29"^^<http://www.w3.org/2001/XMLSchemainteger>;
+  demo:TotalExperience "10.2"^^<http://www.w3.org/2001/XMLSchemafloat>;
+  demo:Manager "1001"^^<http://www.w3.org/2001/XMLSchemainteger>;
+  demo:Salary "20000.42"^^<http://www.w3.org/2001/XMLSchemafloat>;
+  demo:SalaryRange "Low";
+  demo:hasManager "Yes" .
+
+demo:1001 a demo:Employee;
+  demo:Name "Shri Vashitha";
+  demo:Age "55"^^<http://www.w3.org/2001/XMLSchemainteger>;
+  demo:TotalExperience "33"^^<http://www.w3.org/2001/XMLSchemafloat>;
+  demo:Salary "9687476.65"^^<http://www.w3.org/2001/XMLSchemafloat>;
+  demo:SalaryRange "High";
+  demo:hasManager "No" .
+
+demo:101 a demo:Employee;
+  demo:Name "Shri Ram 101";
+  demo:Age "29"^^<http://www.w3.org/2001/XMLSchemainteger>;
+  demo:TotalExperience "11.2"^^<http://www.w3.org/2001/XMLSchemafloat>;
+  demo:Manager "1001"^^<http://www.w3.org/2001/XMLSchemainteger>;
+  demo:Salary "25000.42"^^<http://www.w3.org/2001/XMLSchemafloat>;
+  demo:SalaryRange "High";
+  demo:hasManager "Yes" .
+
+demo:102 a demo:Employee;
+  demo:Name "Shri Ram 102";
+  demo:Age "30"^^<http://www.w3.org/2001/XMLSchemainteger>;
+  demo:TotalExperience "11.2"^^<http://www.w3.org/2001/XMLSchemafloat>;
+  demo:Manager "1001"^^<http://www.w3.org/2001/XMLSchemainteger>;
+  demo:Salary "40000.42"^^<http://www.w3.org/2001/XMLSchemafloat>;
+  demo:SalaryRange "High";
+  demo:hasManager "Yes" .
+
+demo:103 a demo:Employee;
+  demo:Name "Shri Ram 103";
+  demo:Age "31"^^<http://www.w3.org/2001/XMLSchemainteger>;
+  demo:TotalExperience "11.2"^^<http://www.w3.org/2001/XMLSchemafloat>;
+  demo:Manager "1001"^^<http://www.w3.org/2001/XMLSchemainteger>;
+  demo:Salary "50000.42"^^<http://www.w3.org/2001/XMLSchemafloat>;
+  demo:SalaryRange "High";
+  demo:hasManager "Yes" .

@@ -1,0 +1,18 @@
+ontorefine-cli extract 2305906767881 -u http://localhost:7333 > "J:\GraphDB\code\operations.json"
+
+ontorefine-cli transform "Netherlands_restaurants.csv" -c operations.json -q construct.sparql -r turtle -u http://localhost:7333
+
+
+ontorefine-cli transform "J:\GraphDB\code\sampleCSVData.csv" -c "J:\GraphDB\code\onlyOps.json" -q "J:\GraphDB\code\sparklev000.rq" -r turtle -u http://localhost:7333 > "J:\GraphDB\code\output100.ttl"
+
+salary2 = float(cells['salary'].value)
+
+if salary2 < 25000:
+   return "Low"
+else:
+   return "High"
+
+
+593910110003506
+
+7781998575

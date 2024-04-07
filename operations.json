@@ -1,0 +1,623 @@
+[
+    {
+        "op": "mapping-editor/save-rdf-mapping",
+        "mapping": {
+            "baseIRI": "http://example.com/base/",
+            "namespaces": {
+                "demo": "http://example.com/employee",
+                "xsd": "http://www.w3.org/2001/XMLSchema"
+            },
+            "subjectMappings": [
+                {
+                    "subject": {
+                        "valueSource": {
+                            "source": "column",
+                            "columnName": "empID"
+                        },
+                        "transformation": {
+                            "language": "prefix",
+                            "expression": "demo"
+                        }
+                    },
+                    "typeMappings": [
+                        {
+                            "valueSource": {
+                                "source": "constant",
+                                "constant": "Employee"
+                            },
+                            "transformation": {
+                                "language": "prefix",
+                                "expression": "demo"
+                            }
+                        }
+                    ],
+                    "propertyMappings": [
+                        {
+                            "property": {
+                                "valueSource": {
+                                    "source": "constant",
+                                    "constant": "Name"
+                                },
+                                "transformation": {
+                                    "language": "prefix",
+                                    "expression": "demo"
+                                }
+                            },
+                            "values": [
+                                {
+                                    "valueSource": {
+                                        "source": "column",
+                                        "columnName": "name"
+                                    },
+                                    "valueType": {
+                                        "type": "literal"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "property": {
+                                "valueSource": {
+                                    "source": "constant",
+                                    "constant": "Age"
+                                },
+                                "transformation": {
+                                    "language": "prefix",
+                                    "expression": "demo"
+                                }
+                            },
+                            "values": [
+                                {
+                                    "valueSource": {
+                                        "source": "column",
+                                        "columnName": "age"
+                                    },
+                                    "valueType": {
+                                        "type": "datatype_literal",
+                                        "datatype": {
+                                            "valueSource": {
+                                                "source": "constant",
+                                                "constant": "integer"
+                                            },
+                                            "transformation": {
+                                                "language": "prefix",
+                                                "expression": "xsd"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "property": {
+                                "valueSource": {
+                                    "source": "constant",
+                                    "constant": "TotalExperience"
+                                },
+                                "transformation": {
+                                    "language": "prefix",
+                                    "expression": "demo"
+                                }
+                            },
+                            "values": [
+                                {
+                                    "valueSource": {
+                                        "source": "column",
+                                        "columnName": "totalExperience"
+                                    },
+                                    "valueType": {
+                                        "type": "datatype_literal",
+                                        "datatype": {
+                                            "valueSource": {
+                                                "source": "constant",
+                                                "constant": "float"
+                                            },
+                                            "transformation": {
+                                                "language": "prefix",
+                                                "expression": "xsd"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "property": {
+                                "valueSource": {
+                                    "source": "constant",
+                                    "constant": "Manager"
+                                },
+                                "transformation": {
+                                    "language": "prefix",
+                                    "expression": "demo"
+                                }
+                            },
+                            "values": [
+                                {
+                                    "valueSource": {
+                                        "source": "column",
+                                        "columnName": "managerID"
+                                    },
+                                    "valueType": {
+                                        "type": "datatype_literal",
+                                        "datatype": {
+                                            "valueSource": {
+                                                "source": "column",
+                                                "columnName": "integer"
+                                            },
+                                            "transformation": {
+                                                "language": "prefix",
+                                                "expression": "xsd"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "property": {
+                                "valueSource": {
+                                    "source": "constant",
+                                    "constant": "Salary"
+                                },
+                                "transformation": {
+                                    "language": "prefix",
+                                    "expression": "demo"
+                                }
+                            },
+                            "values": [
+                                {
+                                    "valueSource": {
+                                        "source": "column",
+                                        "columnName": "salary"
+                                    },
+                                    "valueType": {
+                                        "type": "datatype_literal",
+                                        "datatype": {
+                                            "valueSource": {
+                                                "source": "constant",
+                                                "constant": "integer"
+                                            },
+                                            "transformation": {
+                                                "language": "prefix",
+                                                "expression": "xsd"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "description": "Save RDF Mapping"
+    },
+    {
+        "op": "mapping-editor/save-rdf-mapping",
+        "mapping": {
+            "baseIRI": "http://example.com/base/",
+            "namespaces": {
+                "demo": "http://example.com/employee/",
+                "xsd": "http://www.w3.org/2001/XMLSchema"
+            },
+            "subjectMappings": [
+                {
+                    "subject": {
+                        "valueSource": {
+                            "source": "column",
+                            "columnName": "empID"
+                        },
+                        "transformation": {
+                            "language": "prefix",
+                            "expression": "demo"
+                        }
+                    },
+                    "typeMappings": [
+                        {
+                            "valueSource": {
+                                "source": "constant",
+                                "constant": "Employee"
+                            },
+                            "transformation": {
+                                "language": "prefix",
+                                "expression": "demo"
+                            }
+                        }
+                    ],
+                    "propertyMappings": [
+                        {
+                            "property": {
+                                "valueSource": {
+                                    "source": "constant",
+                                    "constant": "Name"
+                                },
+                                "transformation": {
+                                    "language": "prefix",
+                                    "expression": "demo"
+                                }
+                            },
+                            "values": [
+                                {
+                                    "valueSource": {
+                                        "source": "column",
+                                        "columnName": "name"
+                                    },
+                                    "valueType": {
+                                        "type": "literal"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "property": {
+                                "valueSource": {
+                                    "source": "constant",
+                                    "constant": "Age"
+                                },
+                                "transformation": {
+                                    "language": "prefix",
+                                    "expression": "demo"
+                                }
+                            },
+                            "values": [
+                                {
+                                    "valueSource": {
+                                        "source": "column",
+                                        "columnName": "age"
+                                    },
+                                    "valueType": {
+                                        "type": "datatype_literal",
+                                        "datatype": {
+                                            "valueSource": {
+                                                "source": "constant",
+                                                "constant": "integer"
+                                            },
+                                            "transformation": {
+                                                "language": "prefix",
+                                                "expression": "xsd"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "property": {
+                                "valueSource": {
+                                    "source": "constant",
+                                    "constant": "TotalExperience"
+                                },
+                                "transformation": {
+                                    "language": "prefix",
+                                    "expression": "demo"
+                                }
+                            },
+                            "values": [
+                                {
+                                    "valueSource": {
+                                        "source": "column",
+                                        "columnName": "totalExperience"
+                                    },
+                                    "valueType": {
+                                        "type": "datatype_literal",
+                                        "datatype": {
+                                            "valueSource": {
+                                                "source": "constant",
+                                                "constant": "float"
+                                            },
+                                            "transformation": {
+                                                "language": "prefix",
+                                                "expression": "xsd"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "property": {
+                                "valueSource": {
+                                    "source": "constant",
+                                    "constant": "Manager"
+                                },
+                                "transformation": {
+                                    "language": "prefix",
+                                    "expression": "demo"
+                                }
+                            },
+                            "values": [
+                                {
+                                    "valueSource": {
+                                        "source": "column",
+                                        "columnName": "managerID"
+                                    },
+                                    "valueType": {
+                                        "type": "datatype_literal",
+                                        "datatype": {
+                                            "valueSource": {
+                                                "source": "column",
+                                                "columnName": "integer"
+                                            },
+                                            "transformation": {
+                                                "language": "prefix",
+                                                "expression": "xsd"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "property": {
+                                "valueSource": {
+                                    "source": "constant",
+                                    "constant": "Salary"
+                                },
+                                "transformation": {
+                                    "language": "prefix",
+                                    "expression": "demo"
+                                }
+                            },
+                            "values": [
+                                {
+                                    "valueSource": {
+                                        "source": "column",
+                                        "columnName": "salary"
+                                    },
+                                    "valueType": {
+                                        "type": "datatype_literal",
+                                        "datatype": {
+                                            "valueSource": {
+                                                "source": "constant",
+                                                "constant": "integer"
+                                            },
+                                            "transformation": {
+                                                "language": "prefix",
+                                                "expression": "xsd"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "description": "Save RDF Mapping"
+    },
+    {
+        "op": "mapping-editor/save-rdf-mapping",
+        "mapping": {
+            "baseIRI": "http://example.com/base/",
+            "namespaces": {
+                "demo": "http://example.com/employee/",
+                "xsd": "http://www.w3.org/2001/XMLSchema"
+            },
+            "subjectMappings": [
+                {
+                    "subject": {
+                        "valueSource": {
+                            "source": "column",
+                            "columnName": "empID"
+                        },
+                        "transformation": {
+                            "language": "prefix",
+                            "expression": "demo"
+                        }
+                    },
+                    "typeMappings": [
+                        {
+                            "valueSource": {
+                                "source": "constant",
+                                "constant": "Employee"
+                            },
+                            "transformation": {
+                                "language": "prefix",
+                                "expression": "demo"
+                            }
+                        }
+                    ],
+                    "propertyMappings": [
+                        {
+                            "property": {
+                                "valueSource": {
+                                    "source": "constant",
+                                    "constant": "Name"
+                                },
+                                "transformation": {
+                                    "language": "prefix",
+                                    "expression": "demo"
+                                }
+                            },
+                            "values": [
+                                {
+                                    "valueSource": {
+                                        "source": "column",
+                                        "columnName": "name"
+                                    },
+                                    "valueType": {
+                                        "type": "literal"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "property": {
+                                "valueSource": {
+                                    "source": "constant",
+                                    "constant": "Age"
+                                },
+                                "transformation": {
+                                    "language": "prefix",
+                                    "expression": "demo"
+                                }
+                            },
+                            "values": [
+                                {
+                                    "valueSource": {
+                                        "source": "column",
+                                        "columnName": "age"
+                                    },
+                                    "valueType": {
+                                        "type": "datatype_literal",
+                                        "datatype": {
+                                            "valueSource": {
+                                                "source": "constant",
+                                                "constant": "integer"
+                                            },
+                                            "transformation": {
+                                                "language": "prefix",
+                                                "expression": "xsd"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "property": {
+                                "valueSource": {
+                                    "source": "constant",
+                                    "constant": "TotalExperience"
+                                },
+                                "transformation": {
+                                    "language": "prefix",
+                                    "expression": "demo"
+                                }
+                            },
+                            "values": [
+                                {
+                                    "valueSource": {
+                                        "source": "column",
+                                        "columnName": "totalExperience"
+                                    },
+                                    "valueType": {
+                                        "type": "datatype_literal",
+                                        "datatype": {
+                                            "valueSource": {
+                                                "source": "constant",
+                                                "constant": "float"
+                                            },
+                                            "transformation": {
+                                                "language": "prefix",
+                                                "expression": "xsd"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "property": {
+                                "valueSource": {
+                                    "source": "constant",
+                                    "constant": "Manager"
+                                },
+                                "transformation": {
+                                    "language": "prefix",
+                                    "expression": "demo"
+                                }
+                            },
+                            "values": [
+                                {
+                                    "valueSource": {
+                                        "source": "column",
+                                        "columnName": "managerID"
+                                    },
+                                    "valueType": {
+                                        "type": "datatype_literal",
+                                        "datatype": {
+                                            "valueSource": {
+                                                "source": "constant",
+                                                "constant": "integer"
+                                            },
+                                            "transformation": {
+                                                "language": "prefix",
+                                                "expression": "xsd"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "property": {
+                                "valueSource": {
+                                    "source": "constant",
+                                    "constant": "Salary"
+                                },
+                                "transformation": {
+                                    "language": "prefix",
+                                    "expression": "demo"
+                                }
+                            },
+                            "values": [
+                                {
+                                    "valueSource": {
+                                        "source": "column",
+                                        "columnName": "salary"
+                                    },
+                                    "valueType": {
+                                        "type": "datatype_literal",
+                                        "datatype": {
+                                            "valueSource": {
+                                                "source": "constant",
+                                                "constant": "float"
+                                            },
+                                            "transformation": {
+                                                "language": "prefix",
+                                                "expression": "xsd"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "description": "Save RDF Mapping"
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "salary",
+        "expression": "jython:value",
+        "onError": "set-to-blank",
+        "newColumnName": "salaryRange",
+        "columnInsertIndex": 6,
+        "description": "Create column salaryRange at index 6 based on column salary using expression jython:value"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "salaryRange",
+        "expression": "jython:salary2 = cells['salary'].value\n\nreturn salary2",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column salaryRange using expression jython:salary2 = cells['salary'].value\n\nreturn salary2"
+    },
+    {
+        "op": "core/text-transform",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "columnName": "salaryRange",
+        "expression": "jython:salary2 = float(cells['salary'].value)\n\nif salary2 < 25000:\n   return \"Low\"\nelse:\n   return \"High\"",
+        "onError": "keep-original",
+        "repeat": false,
+        "repeatCount": 10,
+        "description": "Text transform on cells in column salaryRange using expression jython:salary2 = float(cells['salary'].value)\n\nif salary2 < 25000:\n   return \"Low\"\nelse:\n   return \"High\""
+    }
+]

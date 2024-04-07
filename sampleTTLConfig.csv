@@ -1,0 +1,9 @@
+subjectPrefix,subject,subjectSource,predicatePrefix,predicate,predicateSource,objectPrefix,object,objectSource,objectDataType
+demo,empID,column,rdf,type,constant,demo,Employee,constant,
+demo,empID,column,demo,Name,constant,demo,name,column,XSD.string
+demo,empID,column,demo,Age,constant,demo,age,column,XSD.integer
+demo,empID,column,demo,TotalExperience,constant,demo,totalExperience,column,XSD.float
+demo,empID,column,demo,Manager,constant,demo,managerID,column,XSD.integer
+demo,empID,column,demo,Salary,constant,demo,salary,column,XSD.float
+demo,empID,column,demo,Rating,constant,demo,rating,column,XSD.string
+demo,empID,column,demo,Feedback,constant,demo,feedback,column,XSD.string
